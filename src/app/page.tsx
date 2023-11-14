@@ -8,14 +8,9 @@ const Home = () => {
   const getResolution = (value:any) => {
     setResolution(value);
   };
-  const image = {
-    140: "heart1.png",
-    280: "heart2.png",
-    360: "heart3.png",
-    720: "heart4.png",
-    1080: "lusi.png",
-  };
-const images = 'lusi.png'
+
+const images = (resolution== 140 && 'heart1.png')|| (resolution== 280 && 'heart2.png')||(resolution== 360 && 'heart3.png')||(resolution== 720 && 'heart4.png')||(resolution== 1080 && 'lusi.png')
+
 
   return (
     <div className="text-gray-600 w-screen h-screen grid  justify-items-center py-10">
