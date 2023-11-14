@@ -2,8 +2,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-const page = () => {
+const Home = () => {
   const [resolution, setResolution] =React.useState(0);
+  
   const getResolution = (value:any) => {
     setResolution(value);
   };
@@ -59,4 +60,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Home;
