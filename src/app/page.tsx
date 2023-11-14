@@ -15,6 +15,7 @@ const Home = () => {
     720: "heart4.png",
     1080: "lusi.png",
   };
+const images = 'lusi.png'
 
   return (
     <div className="text-gray-600 w-screen h-screen grid  justify-items-center py-10">
@@ -22,7 +23,7 @@ const Home = () => {
         <div className="basis-3/5 grid place-items-center">
           {resolution ? (
             <Image
-              src={require(`../../public/images/${image[resolution]}`)}
+              src={require(`../../public/images/${images}`)}
               alt="Photo"
               className="w-auto max-h-[20rem]"
             />
