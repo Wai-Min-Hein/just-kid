@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 const page = () => {
-  const [resolution, setResolution] = useState(0);
-  const getResolution = (value) => {
+  const [resolution, setResolution] =React.useState(0);
+  const getResolution = (value:any) => {
     setResolution(value);
   };
   const image = {
